@@ -3,20 +3,25 @@ let bgColor = document.getElementById('bgColorChange');
 let click = 0;
 
 function bgColorChange() {
-    if (click === 0) {
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.getElementsByClassName('fa-solid')[0].style.display = 'none';
+    document.querySelector('body').style.color = 'black';
+    document.getElementsByClassName('fa-solid')[1].style.display = 'inline';
 
-        click++;
 
-
-    } else {
-        document.querySelector('body').style.backgroundColor = '';
-        document.querySelector('body').style.color = '';
-        click--;
-
-    }
 }
+function bgChangeFunction(){
+    document.querySelector('body').style.backgroundColor = '';
+    document.getElementsByClassName('fa-solid')[0].style.display = '';
+    document.querySelector('body').style.color = '';
+    document.getElementsByClassName('fa-solid')[1].style.display = '';
+
+
+
+
+}
+
+
 
 // }
 
