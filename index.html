@@ -7,8 +7,18 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="newproject.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
+
+<div class="fixed_sec">
+    <button class="back">&#8682; <br>Back to top</button>
+</div>
+
+
+
+
 
 <body id="bgcolor">
     <div class="all-container">
@@ -23,16 +33,18 @@
                 <a href="#">My projects</a>
                 <a href="#" class="border-apply">Contact me</a>
                 <a href="">&#124;</a>
-                <i class='bx bxs-brightness' id="bgColorChanger" onclick="bgColorChange()"></i>
-                <!-- <i class='bx bxs-brightness'></i> -->
+                <div class="toggle-btn">
+                    <i class='fa-solid fa-toggle-on' id="bgColorChanger" onclick="bgColorChange()"></i>
+                    <i class='fa-solid fa-toggle-off' id="bgBLack" onclick="bgChangeFunction()"></i>
 
+                </div>
                 <button type="submit" class="btn-resume">Resume</button>
             </nav>
         </div>
 
         <div class="main-container" id="home">
             <div class="image-sec">
-                <img src="/IMAGE/ronaldo-removebg-preview.png" alt="Ronaldo siuuuuu ">
+                <img src="ronaldo-removebg-preview.png" alt="Ronaldo siuuuuu ">
             </div>
             <div class="intro-sec">
                 Hi, I'm Sandesh &#129392;
@@ -148,10 +160,19 @@
 
                 </div>
             </div>
+
+
+
+            <footer id="Last-pt">
+              
+            </footer>
         </div>
 
     </div>
 
+
+
+    
 
 
 
