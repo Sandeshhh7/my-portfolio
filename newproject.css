@@ -34,6 +34,7 @@ body {
 .name {
     padding: 1% 5%;
     /* color: white; */
+    position: relative;
 }
 
 .name h1::after {
@@ -53,10 +54,10 @@ body {
     cursor: pointer;
 
 }
-
+/* 
 .nav-items i:active body {
     background-color: white;
-}
+} */
 
 .nav-items a {
     text-decoration: none;
@@ -71,11 +72,31 @@ body {
 
 }
 #bgColorChanger{
-    font-size: x-large;
+    /* font-size: x-large; */
+    /* marign: 0 10px; */
     transition: 0.5s ease;
+    position: absolute;
+    /* border: 2px solid red; */
+
+    
 }
-#bgColorChanger:active{
-    transform: rotate(90deg);
+
+
+
+/*for the toggle btn part both should have same size*/
+.toggle-btn{
+    /* position: relative; */
+    font-size: 32px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#bgBLack{
+    /* display: none; */
+    /* border: 2px solid red; */
+
 }
 
 /*for verical line*/
@@ -92,7 +113,7 @@ body {
     color: white;
     font-weight: 600;
     border: 1px solid rgb(242, 0, 73);
-    box-shadow: 0px 0px 20px rgb(242, 0, 73);
+    box-shadow: 0px 0px 20px rgb(242, 0, 73), 0px 3px 5px rgb(242, 0, 73) inset;
 
 
     transition: all 0.3s ease-in-out;
@@ -404,5 +425,35 @@ body {
 .serivces-cont:hover a{
     color: white;
     transition: all 0.5s ease;
+
+}
+
+
+#Last-pt{
+    margin-top: 20vh;
+    display: flex;
+}
+
+
+.fixed_sec{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.fixed_sec button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f20049;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow:0px 0px 20px #f20049;
+}
+.fixed_sec button:hover{
+    background-color: #f20049aa;
+}
+.fixed_sec button:active{
+    box-shadow: 2px 4px 6px #f26500c9 inset ;
 
 }
