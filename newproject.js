@@ -19,7 +19,13 @@ function bgChangeFunction(){
 
 
 
+
 }
+ let backbtn = document.getElementById('back');
+    backbtn.addEventListener('click', () => {
+        window.location.href = 'index.html';
+    }
+)
 
 
 
@@ -37,4 +43,5 @@ function bgChangeFunction(){
 //     isClicked = !isClicked;
 // }
 // );
+
 
